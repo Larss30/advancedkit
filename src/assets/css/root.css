@@ -1156,11 +1156,13 @@
         justify-content: center;
     }
     #footer-1390 .cs-flex {
-        margin: 0 auto;
-    }
-    #footer-1390 .cs-social {
+        margin: 0 0 0 auto;
         /* sends it to the right in the 3rd position */
         order: 3;
+    }
+    #footer-1390 .cs-social {
+        /* sends it to the right in the 2nd position */
+        order: 2;
     }
 }
 /* Dark Mode */
