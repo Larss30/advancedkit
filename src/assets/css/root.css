@@ -1149,7 +1149,7 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #footer-1390{
-        padding: 2rem;
+        padding-bottom: 2rem;
     }
     #footer-1390 .cs-top {
         align-items: flex-start;
