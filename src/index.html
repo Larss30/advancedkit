@@ -10,6 +10,8 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
 {% endblock %}
 
 {% extends 'layouts/base.html' %}
@@ -391,13 +393,13 @@ eleventyNavigation:
 
         <!-- Glide Init Script-->
         <script>
-            new Glide('.glide', {
-              type: 'carousel',
-              perView: 1,  // 1 item per view
-              focusAt: 'center',  // Keeps the active slide centered
-              gap: 10,  // Space between slides in px
-            }).mount();
-          </script>
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 1,  // 1 item per view
+            focusAt: 'center',  // Keeps the active slide centered
+            gap: 10,  // Space between slides in px
+        }).mount();
+        </script>
     </div>
 
     <!--Start of Tawk.to Script-->
