@@ -10,8 +10,12 @@ eleventyNavigation:
 
 {% block head %}
     <link rel="stylesheet" href="/assets/css/local.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+
+     <!--          Glide Assets        -->
+    <link rel="stylesheet" href="assets/css/glide-core.css">
+    <link rel="stylesheet" href="assets/css/theme-core.css">
+    <script src="assets/js/glide.js"></script>
+    
 {% endblock %}
 
 {% extends 'layouts/base.html' %}
@@ -375,32 +379,38 @@ eleventyNavigation:
     <!-- ============================================ -->
     <!--               Glide Slider                   -->
     <!-- ============================================ -->
-    <div class="glide">
-        <div class="glide__track" data-glide-el="track">
-          <ul class="glide__slides">
-            <li class="glide__slide">Slide 1</li>
-            <li class="glide__slide">Slide 2</li>
-            <li class="glide__slide">Slide 3</li>
-            <li class="glide__slide">Slide 4</li>
-          </ul>
+    <section id="review_carousel">
+        <div class="cs-container">
+            <div class="cs-content">
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                      <ul class="glide__slides">
+                        <li class="glide__slide">Slide 1</li>
+                        <li class="glide__slide">Slide 2</li>
+                        <li class="glide__slide">Slide 3</li>
+                        <li class="glide__slide">Slide 4</li>
+                      </ul>
+                    </div>
+                  
+                    <!-- Optional Arrows -->
+                    <div class="glide__arrows" data-glide-el="controls">
+                      <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
+                      <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
+                    </div>
+            
+                    <!-- Glide Init Script-->
+                    <script>
+                    new Glide('.glide', {
+                        type: 'carousel',
+                        perView: 1,  // 1 item per view
+                        focusAt: 'center',  // Keeps the active slide centered
+                        gap: 10,  // Space between slides in px
+                    }).mount();
+                    </script>
+                </div>
+            </div>
         </div>
-      
-        <!-- Optional Arrows -->
-        <div class="glide__arrows" data-glide-el="controls">
-          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
-          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
-        </div>
-
-        <!-- Glide Init Script-->
-        <script>
-        new Glide('.glide', {
-            type: 'carousel',
-            perView: 1,  // 1 item per view
-            focusAt: 'center',  // Keeps the active slide centered
-            gap: 10,  // Space between slides in px
-        }).mount();
-        </script>
-    </div>
+    </section>
 
     <!--Start of Tawk.to Script-->
     <!-- Remove the script block if this site is not using Live Chat -->
