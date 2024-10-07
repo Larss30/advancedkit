@@ -1337,6 +1337,11 @@
       /* Makes img tag act as a background image */
       object-fit: cover;
     }
+    /* Centralize slider content */
+    #reviews-1833 .glide__slide{
+        display: flex !important;
+        justify-content: center;
+    }
   }
   /* Tablet - 768px */
   @media only screen and (min-width: 48rem) {
