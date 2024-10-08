@@ -311,3 +311,15 @@
         color: var(--bodyTextColorWhite);
     }
 }
+
+/* Homepage Blog */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #blog-1701 .cs-title,
+    body.dark-mode #blog-1701 .cs-h3,
+    body.dark-mode #blog-1701 .cs-desc {
+    color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #blog-1701 .cs-desc {
+    opacity: 0.8;
+    }
+}
