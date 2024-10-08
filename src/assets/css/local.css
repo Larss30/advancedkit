@@ -1402,3 +1402,254 @@
         background:var(--primary);
     }
 }
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #services-1734 {
+      padding: var(--sectionPadding);
+      background-color: #F7F7F7;
+      position: relative;
+    }
+    #services-1734 .cs-container {
+      width: 100%;
+      /* changes to 1280px at tablet */
+      max-width: 36.5rem;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* 48px - 64px */
+      gap: clamp(3rem, 6vw, 4rem);
+    }
+    #services-1734 .cs-content {
+      /* set text align to left if content needs to be left aligned */
+      text-align: center;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      /* centers content horizontally, set to flex-start to left align */
+      align-items: center;
+    }
+    #services-1734 .cs-card-group {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      /* 16px - 20px */
+      column-gap: clamp(1rem, 2vw, 1.25rem);
+      row-gap: 2rem;
+    }
+    #services-1734 .cs-item {
+      list-style: none;
+      width: 100%;
+      grid-column: span 12;
+    }
+    #services-1734 .cs-item:hover .cs-picture img {
+      opacity: .3;
+      transform: scale(1.2);
+    }
+    #services-1734 .cs-item:hover .cs-h3 {
+      color: var(--primary);
+    }
+    #services-1734 .cs-link {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      /* we use flexbox here to grow the link to fit the whole item, making it clickable everywhere, no matter the size */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      /* 12px - 20px */
+      gap: clamp(0.75rem, 1.6vw, 1.25rem);
+      position: relative;
+      z-index: 1;
+    }
+    #services-1734 .cs-picture {
+      width: 100%;
+      /* 300px - 380px */
+      height: clamp(12.5rem, 33vw, 26.25rem);
+      background-color: #000;
+      display: block;
+      position: relative;
+      z-index: -1;
+      overflow: hidden;
+    }
+    #services-1734 .cs-picture img {
+      width: 100%;
+      height: 100%;
+      /* Makes img tag act as a background image */
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: transform ease-in-out 0.5s, opacity 0.3s;
+    }
+    #services-1734 .cs-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    #services-1734 .cs-h3 {
+      /* 20px - 25px */
+      font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
+      text-transform: uppercase;
+      font-weight: 900;
+      line-height: 1.2em;
+      text-align: inherit;
+      margin: 0;
+      color: var(--headerColor);
+      transition: color 0.3s;
+    }
+    #services-1734 .cs-arrow {
+      width: 1.5rem;
+      height: auto;
+    }
+  }
+  /* Tablet - 768px */
+  @media only screen and (min-width: 48rem) {
+    #services-1734 .cs-container {
+      max-width: 80rem;
+    }
+    #services-1734 .cs-content {
+      text-align: left;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #services-1734 .cs-item {
+      grid-column: span 3;
+    }
+  }
+  /* Dark Mode */
+  @media only screen and (min-width: 0rem) {
+    body.dark-mode #services-1734 {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+    body.dark-mode #services-1734 .cs-title,
+    body.dark-mode #services-1734 .cs-text,
+    body.dark-mode #services-1734 .cs-h3 {
+      color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #services-1734 .cs-picture {
+      background-color: var(--primary);
+    }
+    body.dark-mode #services-1734 .cs-text {
+      opacity: .8;
+    }
+  }
+                                  
+  /*-- -------------------------- -->
+<---         CS-Content         -->
+<--- -------------------------- -*/
+
+/* you can place this CSS group in your global stylesheet that is loaded on every page of the site so all you need to do is copy and paste the HTML into any section and it will all work. Or piece it inside the media queries in whatever section you want to add it to. You can also remove the cs-topper, cs-title, and cs-text and if they aren't already in your global stylesheet you can paste them outside these media queries so all cs-topper, cs-title, and cs-text on your site will pull from 1 place. */
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    #cs-content-829 {
+        /* set text align to left if content needs to be left aligned */
+        text-align: left;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        /* centers content horizontally, set to flex-start to left align */
+        align-items: flex-start;
+    }
+    #cs-content-829 .cs-topper {
+        font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+    }
+    #cs-content-829 .cs-title {
+        font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: inherit;
+        max-width: 43.75rem;
+        margin: 0 0 1rem 0;
+        color: var(--headerColor);
+        position: relative;
+    }
+    #cs-content-829 .cs-text {
+        font-size: var(--bodyFontSize);
+        line-height: 1.5em;
+        text-align: inherit;
+        width: 100%;
+        max-width: 40.625rem;
+        margin: 0;
+        color: var(--bodyTextColor);
+    }
+    #cs-content-829 .cs-title {
+        max-width: 20ch;
+    }
+    #cs-content-829 .cs-text {
+        max-width: 31.5rem;
+    }
+    #cs-content-829 .cs-text:before {
+        /* divider line */
+        content: "";
+        width: 7.8125rem;
+        height: 3px;
+        margin-bottom: 1rem;
+        background: var(--primary);
+        opacity: 1;
+        display: block;
+        position: relative;
+    }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #cs-content-829 {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #cs-content-829 .cs-flex {
+        width: 50%;
+        max-width: 34.375rem;
+        flex: none;
+    }
+    #cs-content-829 .cs-topper,
+    #cs-content-829 .cs-title {
+        text-align: right;
+    }
+    #cs-content-829 .cs-title {
+        margin: 0;
+    }
+    #cs-content-829 .cs-text {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #cs-content-829 .cs-text:before {
+        width: 3px;
+        height: 7.8125rem;
+        /* 24px - 28px */
+        margin: 0 clamp(1.5rem, 3vw, 1.75rem);
+        /* prevents flexbox from squishing it */
+        flex: none;
+    }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #cs-content-829 .cs-title,
+    body.dark-mode #cs-content-829 .cs-text,
+    body.dark-mode #cs-content-829 .cs-h3,
+    body.dark-mode #cs-content-829 .cs-item-text {
+        color: var(--bodyTextColorWhite);
+    }
+}
