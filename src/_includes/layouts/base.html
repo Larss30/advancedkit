@@ -33,6 +33,23 @@
         <meta property="og:image:width" content="1421">
         <meta property="og:image:height" content="180">
 
+        <!-- Favicon - remove comment when adding favicons -->
+        <!-- <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href=" /assets/favicons/favicon-16x16.png">
+        <link rel="manifest" href="/assets/favicons/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff"> -->
+
+        <!-- Twitter Card meta tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@your_twitter_handle">
+        <meta name="twitter:title" content="Your Page Title">
+        <meta name="twitter:description" content="A brief description of your page's content.">
+        <meta name="twitter:image" content="https://example.com/path-to-image.jpg">
+        <meta name="twitter:image:alt" content="An image description for accessibility.">
+        <meta name="twitter:creator" content="@your_twitter_handle">
+
         <!-- Helps prevent duplicate content issues -->
         <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
 
@@ -44,6 +61,39 @@
         <script src="/assets/js/dark.js" defer></script>
         <script src="/assets/js/nav.js" defer></script>
         <script src="/assets/js/faq.js" defer></script>
+
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "{{ client.name }}",
+              "url": "{{ client.domain }}",
+              "logo": "{{ client.domain }}/images/logo.png",
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "{{ client.phoneForTel }}",
+                "contactType": "Customer Service",
+                "areaServed": "US",
+                "availableLanguage": ["English"]
+              },
+              "sameAs": [
+                "{{ client.social.facebook }}",
+                "{{ client.social.twitter }}",
+                "{{ client.social.instagram }}",
+                "{{ client.social.youtube }}",
+                "{{ client.social.linkedin }}"
+              ],
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "{{ client.address.lineOne }}, {{ client.address.lineTwo }}",
+                "addressLocality": "{{ client.address.city }}",
+                "addressRegion": "{{ client.address.state }}",
+                "postalCode": "{{ client.address.zip }}",
+                "addressCountry": "US"
+              }
+            }
+            </script>
+            
 
         <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
         {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be done manually from the pages head block. This is so responsive preloads can be achieved when using the optimization branch #}
