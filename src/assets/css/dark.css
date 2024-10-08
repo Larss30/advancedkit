@@ -292,3 +292,22 @@
         border-color: #fff;
     }
 }
+
+/* Tabbed Gallery */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #gallery-974 .cs-title,
+    body.dark-mode #gallery-974 .cs-button {
+        color: var(--bodyTextColorWhite);
+    }
+    body.dark-mode #gallery-974 .cs-button.cs-active {
+        color: var(--primary);
+    }
+}
+
+/* Regular Gallery */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode #gallery-973 .cs-title,
+    body.dark-mode #gallery-973 .cs-text {
+        color: var(--bodyTextColorWhite);
+    }
+}
