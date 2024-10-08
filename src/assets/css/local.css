@@ -1796,7 +1796,7 @@
                                   
 
 /*-- -------------------------- -->
-<---      Tabbed Gallery        -->
+<---          Gallery           -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
@@ -1940,40 +1940,41 @@
     }
   }
   /* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
+  @media only screen and (min-width: 64rem) {
     #gallery-974 .cs-container {
-    max-width: 80rem;
+      max-width: 80rem;
     }
     #gallery-974 .cs-image {
-    width: 25%;
-    height: 25rem;
+      width: 25%;
+      height: 25rem;
     }
     #gallery-974 .cs-image:nth-of-type(1) {
-    /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
-    transition-delay: 0.15s;
+      /* these delays stagger the reveal of each image so they all go one after the other and not all at once */
+      transition-delay: 0.15s;
     }
     #gallery-974 .cs-image:nth-of-type(2) {
-    transition-delay: 0.3s;
+      transition-delay: 0.3s;
     }
     #gallery-974 .cs-image:nth-of-type(3) {
-    transition-delay: 0.45s;
+      transition-delay: 0.45s;
     }
     #gallery-974 .cs-image:nth-of-type(4) {
-    transition-delay: 0.6s;
+      transition-delay: 0.6s;
     }
     #gallery-974 .cs-image:nth-of-type(5) {
-    transition-delay: 0.15s;
+      transition-delay: 0.15s;
     }
     #gallery-974 .cs-image:nth-of-type(6) {
-    transition-delay: 0.3s;
+      transition-delay: 0.3s;
     }
     #gallery-974 .cs-image:nth-of-type(7) {
-    transition-delay: 0.45s;
+      transition-delay: 0.45s;
     }
     #gallery-974 .cs-image:nth-of-type(8) {
-    transition-delay: 0.6s;
+      transition-delay: 0.6s;
     }
-}
+  }
+                                  
 
 /*-- -------------------------- -->
 <---      Regular Gallery       -->
