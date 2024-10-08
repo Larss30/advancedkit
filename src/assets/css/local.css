@@ -1368,3 +1368,16 @@
 <---        Glide Slider        -->
 <--- -------------------------- -*/
 
+.glide {
+    width: 100%; /* Ensure full width on mobile */
+    max-width: 80%; /* Max width on larger screens */
+    margin: 0 auto;
+  }
+  
+  .glide__slide {
+    text-align: center;
+    font-size: 24px;
+    background-color: #f7f7f7;
+    padding: 50px 0; /* Reduce padding for mobile */
+    border: 1px solid #ddd;
+  }
