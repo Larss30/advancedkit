@@ -1451,8 +1451,8 @@
       grid-column: span 12;
     }
     #services-1734 .cs-item:hover .cs-picture img {
-      opacity: .3;
-      transform: scale(1.2);
+      opacity: .8;
+      transform: scale(1.1);
     }
     #services-1734 .cs-item:hover .cs-h3 {
       color: var(--primary);
@@ -1493,7 +1493,7 @@
     }
     #services-1734 .cs-flex {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
     }
@@ -1621,6 +1621,7 @@
         width: 50%;
         max-width: 34.375rem;
         flex: none;
+        align-items: flex-end;
     }
     #cs-content-829 .cs-topper,
     #cs-content-829 .cs-title {
