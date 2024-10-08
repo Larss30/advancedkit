@@ -1422,21 +1422,6 @@
       /* 48px - 64px */
       gap: clamp(2.5rem, 4vw, 4rem);
     }
-    #services-1644 .cs-content {
-      /* set text align to left if content needs to be left aligned */
-      text-align: center;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      /* centers content horizontally, set to flex-start to left align */
-      align-items: center;
-    }
-    #services-1644 .cs-title {
-      max-width: none;
-    }
-    #services-1644 .cs-text {
-      max-width: 60ch;
-    }
     #services-1644 .cs-card-group {
       width: 100%;
       margin: 0;
